@@ -59,6 +59,9 @@ const CardWrapper = styled.div`
   justify-content: center;  
 `
 const MenuWrapper = styled.div`
+  transition: opacity 500ms;
+  opacity: ${ props => props.visible ? '1' : '0'};
+  
   ul {
     list-style: none;
     margin: 0;
@@ -134,10 +137,10 @@ const StickyNote = ({
             onKeyDown={handleKeyDown}
           />
         </CardWrapper>
-        <MenuWrapper style={{ visibility: `${activeInput ? "visible" : "hidden"}` }} >
+        <MenuWrapper visible={activeInput} >
           <ul>
              {colorPalette.map((data, index) =>
-              <li key={index} onClick={e => changeColor(e,key)}
+              <li key={index} onClick={() => setColor(data)}
                style={{ height: `15px`, width: `15px`, background: `${data}` }} />)}  
           </ul>
         </MenuWrapper>
