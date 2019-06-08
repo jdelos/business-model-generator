@@ -20,7 +20,7 @@ const MainBoard = styled.main`
   right: 0;
   overflow: auto;
   //opacity: 0.2;
-  background: tomato; /* Just to visualize the extent */
+  //background: tomato; /* Just to visualize the extent */
   z-index:0;
 `
 
