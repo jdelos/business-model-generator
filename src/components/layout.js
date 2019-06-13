@@ -24,6 +24,8 @@ const MainBoard = styled.main`
   z-index:0;
 `
 
+
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

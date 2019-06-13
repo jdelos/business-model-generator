@@ -2,6 +2,8 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+
+
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -26,7 +28,10 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img
+      imgStyle={{ maxWidth: `100%`, maxHeight: `100%`, width: `auto`, height: `auto`, marginLeft: `auto`, marginTop: `auto` }}
+      style={{margin: `auto`}}
+      fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 export default Image
