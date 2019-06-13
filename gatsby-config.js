@@ -2,10 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `Free - Business Model Generator`,
     description: `Build your business model canvass online for free.`,
+    siteUrl: "http://bmc.surge.sh",
     author: `BMC - Free`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

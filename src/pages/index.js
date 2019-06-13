@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-import StaticImg from '../images/bmc_trans.jpg'
+import StaticImg from '../images/bmc_trans_small.jpg'
 
 const Container = styled.div`
   margin: 1rem auto;
@@ -39,7 +39,7 @@ const Tag = styled.li`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Free Business Model Generator" image={'http://bmc.surge.sh/static/bf09fa8eaecaff6da8895d16045a0312/73897/bmc_trans.jpg'} />
+    <SEO title="Free Business Model Generator" image={'http://bmc.surge.sh/static/bf09fa8eaecaff6da8895d16045a0312/73897/bmc_trans_small.jpg'} />
     <Container>
       <h1 style={{ textAlign: `center` }}>Business Model Generator</h1>
       <p style={{color:`red`}}> Attention/Disclaimer: Not working on mobile, this is an experimental prototype. </p>
